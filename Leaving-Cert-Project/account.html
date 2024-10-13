@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="with=device-width, intial-scale=1.0">
+  <title> All products </title>
+  <link rel="stylesheet" href="productpage.css">
+  <script src="https://kit.fontawesome.com/70772a0888.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="Safetea.jpg.png" width="125px">
+      </div>
+      <nav>
+        <ul>
+          <li> <a href="index.html" </a> Home</li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+  <!------- account page----->
+  <div class="account-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <img src="Safetea.jpg.png" width="100%">
+        </div>
+        <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+              <span onclick="login()">Login</span>
+              <span onclick="register()">Register</span <hr id="Indicator">
+            </div>
+
+            <f orm id="LoginForm">
+              <input type="text" placeholder="Username">
+              <input type="password" placeholder="Password">
+              <button type="sumbit" class="btn">Login</button>
+              <a href=""> Forgot password</a>
+              </form>
+
+              <form id="RegForm">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="sumbit" class="btn">Register</button>
+              </form>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!----- footer ----->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3> Dowload the Safe tea App </h3>
+          <p> Download App for Android and ios mobile phone</p>
+          <div class="app-logo">
+            <img src="GooglePlayStore.jpg">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="Safetea.jpg.png">
+          <p>Our Purpose is to protect your home with our variety of Motion Sensors </p>
+        </div>
+        <div class="footer-col-3">
+          <h3> Useful Links</h3>
+          <ul>
+            <li>About</li>
+            <li>Return Policy</li </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3> Follow us</h3>
+          <ul>
+            <li> <i class="fa fa-facebook"></i>
+            <li> <i class="fa fa-twitter"></i>
+            <li><i class="fa fa-linkedin"></i>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <!------ js for Toggle Form ----->
+
+  <script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register() {
+      RegForm.style.transform = "translateX(0px)"
+      LoginForm.style.transform = "translateX(0px)"
+      Indicator.style.transform = "translateX(100px)"
+    }
+    function login() {
+      RegForm.style.transform = "translateX(300px)"
+      LoginForm.style.transform = "translateX(300px)"
+      Indicator.style.transform = "translateX(0px)"
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>
